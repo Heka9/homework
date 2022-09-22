@@ -7,6 +7,69 @@
 }
 
 [class*="__container"]{
-	max-width: 1200px;
+	max-width: 810px;
 	margin: 0 auto;
 }
+
+
+
+.header,
+.footer {
+	text-align: center;
+	font-weight: 900;
+	padding: 30px 0px;
+	font-size: 30px;
+}
+
+.main {
+}
+.main__article {
+}
+.article {
+}
+.article__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin: 0px 0px 92px 0px;
+}
+.article__image {
+	margin: 0px 0px 60px 0px;
+}
+.article__image img{
+	max-width: 100%;
+}
+.article__text {
+	margin: 0px 0px 24px 0px;
+	line-height: 160%;
+	color: #424551;
+}
+.article__text_bold {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin: 0px 0px 24px 0px;
+}
+.article__quote {
+	background: url('../img/braces-bg.svg') 0 24px no-repeat;
+	padding: 24px 0px 0px 58px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin: 0px 0px 24px 0px;
+}
+.article__list {
+	margin: 0px 0px 24px 0px;
+}
+.article__item {
+	line-height: 160%;
+	color: #424551;
+	margin: 0px 0px 4px 0px;
+	padding: 0px 0px 0px 32px;
+	min-height: 16px;
+	background: url('../img/check-bg.svg') 0px 5px no-repeat;
+}
+

@@ -1,0 +1,43 @@
+@import "reset.css";
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body{
+	font-family: "Lato";
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+[class*="__container-small"]{
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+header,
+footer{
+	text-align: center;
+	padding: 50px 0px;
+}
+
+
+.main__news-block:not(:last-child) {
+	margin-bottom: 50px;
+}
+.main__who-we-are:not(:last-child) {
+	margin-bottom: 50px;
+}
+.main__courses:not(:last-child) {
+	margin-bottom: 50px;
+}
+.main__benefits:not(:last-child) {
+	margin-bottom: 50px;
+}

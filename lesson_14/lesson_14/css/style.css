@@ -10,6 +10,7 @@ body{
 	overflow: hidden;
 	min-height: 100%;
 	position: relative;
+	background: #b7c656 url('') 0 0 no-repeat scroll;
 }
 
 [class*="__container"]{
@@ -18,6 +19,9 @@ body{
 }
 /*----------------------------------------------------------*/
 
+.main{
+	padding: 30px 0px;
+}
 .header__container{
 	display: flex;
 	justify-content:center;
@@ -30,7 +34,6 @@ body{
 }
 .header__container span{
 	color: #e65824;
-	text-shadow: -3px 3px 2px #ff4400;
 }
 
 .header__container .one{
@@ -58,8 +61,7 @@ body{
 	animation:top 0.2s 1 ease  1.9s;
 }
 .header__container .white{
-	color: #fff;
-	text-shadow:none;
+	color: transparent;
 }
 @keyframes top {
 	0% {
@@ -72,7 +74,9 @@ body{
 }
 /*----------------------------------------------------------*/
 
-
+.block:not(:last-child){
+	margin-bottom: 30px
+}
 .flex-box{
 	display: flex;
 	gap: 10px;
@@ -94,5 +98,48 @@ body{
 .flex-elem img{
 	height: 100%;
 	width: 100%;
+	object-fit: cover;
+}
+/*----------------------------------------------------------*/
+
+.new-block {
+}
+.new-block__container {
+}
+.new-block__poligon {
+	display: flex;
+	justify-content:center;
+	gap: 15px;
+	padding: 10px;
+	height: 400px;
+}
+.new-block__element {
+	position: relative;
+	flex: 0 1 150px;
+	height: 100%;
+	transition: all 1s ease 0s;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0px 0px 15px 1px rgb(197, 196, 196);
+}
+.new-block__element::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.new-block__element:hover{
+	flex: 1 1 100%;
+}
+.new-block__element:hover::before{
+	background-color: rgba(255, 255, 255, 0);
+}
+.new-block__element img{
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }

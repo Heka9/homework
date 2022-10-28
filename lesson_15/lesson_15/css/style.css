@@ -26,6 +26,13 @@ body{
 }
 /*----------------------------------------------------------*/
 
+.page__about-us {
+}
+.page__main {
+}
+
+/*----------------------------------------------------------*/
+
 .button {
 	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
 	border-radius: 4px;
@@ -53,6 +60,25 @@ body{
 	color: #FFFFFF;
 	border: 1px solid transparent;
 	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+.title {
+}
+.title__subtitle {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+}
+.title__subtitle:not(:last-child){
+	margin-bottom: 8px;
+}
+.title__text {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
 }
 /*----------------------------------------------------------*/
 
@@ -91,7 +117,6 @@ body{
 }
 
 .menu {
-	
 }
 
 .header__list {
@@ -150,8 +175,7 @@ body{
 
 /*----------------------------------------------------------*/
 
-.page__main {
-}
+
 .main-block {
 	position: relative;
 	background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
@@ -328,3 +352,91 @@ body{
 	right: -2.77%;
 	background: url('../img/decor/dots.svg') 0 0 no-repeat;
 }
+
+/* ----------------------------------------- */
+
+.about-us {
+	position: relative;
+}
+.about-us__container {
+	padding-top: 180px;
+	padding-bottom: 90px;
+	display: flex;
+	align-items: center;
+}
+.about-us__image {
+	flex: 1 1 auto;
+	padding-right: 20px;
+}
+.about-us__image img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.about-us__content {
+	flex: 0 1 390px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.about-us__title {
+}
+.about-us__title:not(:last-child){
+	margin-bottom: 40px;
+}
+.about-us__list {
+}
+.about-us__list:not(:last-child){
+	margin-bottom: 22px;
+}
+.about-us__item {
+	line-height: 160%;
+	color: #424551;
+	display: flex;
+	position: relative;
+	padding-left: 32px;
+}
+.about-us__item::before{
+	content: "";
+	width: 16px;
+	flex: 0 0 16px;
+	height: 16px;
+	background: url("../img/icons/check.svg") 0 0 no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+}
+.about-us__item:not(:last-child){
+	margin-bottom: 12px;
+}
+.about-us__button {
+}
+
+.about-us__decor {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.about-us__item-decor {
+	position: absolute;
+}
+.about-us__item-decor_1 {
+	height: 132px;
+	width: 182px;
+	background: url('../img/decor/dots-2.svg') 0 0 no-repeat;
+	transform: rotate(-52.46deg);
+	top: 285px;
+	left: -4.9%;
+}
+.about-us__item-decor_2 {
+	height: 287px;
+	width: 287px;
+	background: url('../img/decor/circles-2.svg') 0 0 no-repeat;
+	top: 437px;
+	right: -8.59%;
+}
+
+/* ----------------------------------------- */

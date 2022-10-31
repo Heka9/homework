@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<nav class="header__menu menu">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="" class="header__link">About Us</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__link">Courses</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__link">Events</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__link">Blog</a>
+						</li>
+						<li class="header__item">
+							<a href="" class="header__link">Contacts</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions actions-header">
+					<button type="button" class="actions-header__button button">Get consultation</button>
+					<a href="" class="actions-header__link"><span>Log in / Register</span></a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__feedback feedback">
+				<div class="feedback__container">
+					<div class="feedback__image">
+						<img src="img/feedback/illustration.svg" alt="Illustration">
+					</div>
+					<div class="feedback__content">
+						<div class="feedback__title title">
+							<div class="title__subtitle">Any questions?</div>
+							<h2 class="title__text">Drop us a line</h2>
+						</div>
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="feedback__form form-feedback">
+							<div class="form-feedback__first-line">
+								<div class="form-feedback__item">
+									<label for="first-name" class="form-feedback__label">First Name*</label>
+									<input type="text" name="first-name" id="first-name" placeholder="Your first name" required class="form-feedback__input">
+								</div>
+								<div class="form-feedback__item">
+									<label for="last-name" class="form-feedback__label">Last Name*</label>
+									<input type="text" name="last-name" id="last-name" placeholder="Your last name" required class="form-feedback__input">
+								</div>
+							</div>
+							<div class="form-feedback__second-line">
+								<div class="form-feedback__item">
+									<label for="email" class="form-feedback__label">Email*</label>
+									<input type="email" name="mail" id="email" placeholder="Your working email" required class="form-feedback__input">
+								</div>
+								<div class="form-feedback__item">
+									<label for="tel" class="form-feedback__label">Phone</label>
+									<input type="tel" name="phone" id="tel" placeholder="Your phone number" required class="form-feedback__input">
+								</div>
+							</div>
+							<div class="form-feedback__third-line">
+								<div class="form-feedback__item">
+									<label for="textarea" class="form-feedback__label">Message*</label>
+									<textarea name="massage" required id="textarea" placeholder="Your message" class="form-feedback__textarea"></textarea>
+								</div>
+							</div>
+							<div class="form-feedback__footer footer-form-feedback">
+								<div class="footer-form-feedback__item">
+									<input required  name="checkbox-argee" type="checkbox" id="checkbox" class="footer-form-feedback__checkbox">
+									<label for="checkbox" class="footer-form-feedback__label"><span>I agree to receive communications from Createx Online School</span></label>
+								</div>
+								<button type="submit" class="footer-form-feedback__buton button">Send message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+
+		</footer>
+	</div>
+</body>
+
+</html>

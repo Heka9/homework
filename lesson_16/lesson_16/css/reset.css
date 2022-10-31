@@ -36,6 +36,9 @@ textarea {
 input{
 	width: 100%;
 }
+label{
+	display: block;
+}
 button {
 	cursor: pointer;
 	color: inherit;

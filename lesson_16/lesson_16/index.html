@@ -117,7 +117,7 @@
 								<label for="password" class="form-sign-in__label">Password</label>
 								<input required id="password" name="password" type="password" placeholder="Create your password"
 									class="form-sign-in__input">
-									<span class="show-password-icon"></span>
+								<span class="form-sign-in__icon"></span>
 							</div>
 							<div class="form-sign-in__actions actions-sign-in">
 								<div class="actions-sign-in__item">
@@ -150,6 +150,80 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__inner">
+						<div class="subscribe__image">
+							<img src="img/subscribe/illustration.svg" alt="Illustration">
+						</div>
+						<div class="subscribe__content">
+							<h2 class="subscribe__title">Don’t want to miss the best events?
+								Subscribe to our newsletter!</h2>
+							<form action="https://jsonplaceholder.typicode.com/posts" method="post"
+								class="subscribe__form form-subscribe">
+								<div class="form-subscribe__first-line">
+									<input type="email" name="mail" placeholder="Your working email"
+										class="form-subscribe__input">
+									<button type="submit" class="form-subscribe__button button">Subscribe</button>
+								</div>
+								<div class="form-subscribe__second-line">
+									<input type="checkbox" id="subscribe-agree" name="subscribe-agree-checkbox"
+										class="form-subscribe__checkbox">
+									<label for="subscribe-agree" class="form-subscribe__label">I agree to receive communications
+										from Createx Online School</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__join join">
+				<div class="join__container">
+					<div class="join__content">
+						<div class="join__title title">
+							<div class="title__subtitle">Don’t miss the event</div>
+							<h2 class="title__text">Leave a request</h2>
+						</div>
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="join__form form-join">
+							<div class="form-join__item">
+								<label for="form-join-name" class="form-join__label">Full Name</label>
+								<input type="text" id="form-join-name" name="full-name" placeholder="Your full name"
+									class="form-join__input">
+							</div>
+							<div class="form-join__item">
+								<label for="form-join-email" class="form-join__label">Email</label>
+								<input type="email" id="form-join-email" name="email" placeholder="Your working email"
+									class="form-join__input">
+							</div>
+							<div class="form-join__item">
+								<label for="form-join-phone" class="form-join__label">Phone</label>
+								<input type="tel" id="form-join-phone" name="phone" placeholder="Your phone number"
+									class="form-join__input">
+							</div>
+							<button type="submit" class="form-join__button button">Join the event</button>
+							<div class="form-join__text">* You will receive a link to the online lecture in an email after
+								registration.</div>
+						</form>
+					</div>
+					<div class="join__image">
+						<img src="img/join/character.svg" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="page__sub sub">
+				<div class="sub__container">
+					<div class="sub__title title title_center">
+						<div class="title__subtitle">Don’t miss anything</div>
+						<h2 class="title__text">Subscribe to the Createx School announcements</h2>
+					</div>
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="sub__form form-sub">
+						<div class="form-sub__line">
+							<input type="emial" name="sub-email" placeholder="Your working email" class="form-sub__input">
+							<button type="submit" class="form-sub__button button">Subscribe</button>
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>

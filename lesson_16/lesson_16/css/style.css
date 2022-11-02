@@ -125,7 +125,7 @@ body{
 .header::before{
 	content: "";
 	position: absolute;
-	height: 92px;
+	height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -295,15 +295,14 @@ body{
 .footer-form-feedback{
 	position: relative;
 	display: flex;
-	/* flex-wrap: wrap; */
 	align-items: center;
 	gap: 50px;
 	margin-top: 24px;
 }
 .footer-form-feedback__item{
-	/* flex: 0 1 auto; */
 }
 .footer-form-feedback__buton {
+	align-self: flex-start;
 	flex: 1 1 340px;
 }
 .footer-form-feedback__label{

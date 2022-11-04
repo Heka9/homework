@@ -153,18 +153,21 @@ body{
 	background: url('../img/icons/user.svg') 0 0 no-repeat;
 	transition: opacity 0.3s ease 0s;
 }
-.actions-header__login::after{
+.actions-header__login span{
+	position: relative;
+}
+.actions-header__login span::before{
 	content: "";
 	height: 1px;
 	width: 0%;
 	background-color: #333333;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	left: 0;
 	transition: width 0.2s ease 0s;
 }
 
-.actions-header__login:hover::after{
+.actions-header__login:hover span::before{
 	width: 50%;
 }
 .actions-header__login:hover::before{
@@ -185,3 +188,5 @@ body{
 		gap: 20px;
 	}
 }
+
+/* ---------------------------------- */

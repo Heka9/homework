@@ -276,7 +276,12 @@ S
 	background: url('../img/main-block/decor/01.svg') 87% 88px / 736px 264px no-repeat, url('../img/main-block/decor/02.svg') 88% 138px / 738px 278px no-repeat, url('../img/main-block/decor/03.svg') 89% 175px / 738px 308px no-repeat;
 	pointer-events: none;
 }
-@media (max-width: 1023.98px){
+@media (max-width: 1150px){
+	.main-block__decor{
+		display: none;
+	}
+}
+@media (min-width: 1920px){
 	.main-block__decor{
 		display: none;
 	}
@@ -746,12 +751,34 @@ S
 
 .news {
 	padding-top: 55px;
-	padding-bottom: 65px;
+	padding-bottom: 195px;
+	position: relative;
+	overflow: hidden;
 }
 @media (max-width: 991.98px){
 	.news {
 		padding-top: 30px;
 		padding-bottom: 30px;
+	}
+}
+.news__decor{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../img/news/decor/01.svg') 120% 40px / 736px 264px no-repeat, url('../img/news/decor/02.svg') 120% 80px / 738px 278px no-repeat, url('../img/news/decor/03.svg') 120% 120px / 738px 308px no-repeat,url('../img/news/decor/04.svg') 99% 75%/ 399px 216px no-repeat, url('../img/news/decor/05.svg') 100% 85% / 413px 226px no-repeat;
+	z-index: -1;
+	pointer-events: none;
+}
+@media (max-width: 1150px){
+	.news__decor{
+		display: none;
+	}
+}
+@media (min-width: 1920px){
+	.news__decor{
+		display: none;
 	}
 }
 .news__container {
@@ -818,6 +845,4 @@ S
 }
 .content-news__button:hover{
 	box-shadow: 0px 0px 2px 2px #D84727;
-	background-color: #D84727;
-	color: #fff;
 }

@@ -538,13 +538,12 @@ S
 	}
 }
 .item-product__title{
-
+	align-self: flex-start;
 }
 .item-product__title:hover{
 	text-decoration: underline;
 }
 .item-product__label {
-	align-self: flex-start;
 	font-size: 28px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
@@ -812,9 +811,26 @@ S
 	top: -69px;
 	z-index: -1;
 }
+@media (max-width: 991.98px){
+	.news__image:before{
+		display: none;
+	}
+	.news__body {
+		gap: 30px;
+	}
+}
 
 .news__image img{
 	max-width: 100%;
+}
+@media (max-width: 850px){
+	.news__body {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.news__content {
+		flex: 1 1 100%;
+	}
 }
 .content-news {
 }

@@ -84,7 +84,30 @@ body{
 	left: 0;
 	background-color: #000;
 }
+.title-block-footer{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.71;
+	color: #FFFFFF;
+}
+.title-block-footer::after{
+	content: "";
+	height: 1px;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+}
 
+.link-footer{
+	line-height: 2;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+}
+.link-footer:hover{
+	text-decoration: underline;
+}
 /* ----------------------- */
 .header {
 	/* min-height: 106px; */
@@ -1143,4 +1166,98 @@ body{
 }
 .partners__image img{
 	max-width: 100%;
+}
+
+
+/* ------------------------------------- */
+
+.footer {
+}
+.footer__container {
+}
+
+.footer__info {
+}
+.footer__contacts {
+}
+.footer__links {
+}
+.footer__campaign {
+}
+
+.info-footer {
+}
+.info-footer__logo {
+}
+.info-footer__address {
+}
+.info-footer__work-hour {
+}
+
+.address {
+}
+.address__title {
+}
+.address__text {
+}
+
+.work-hour {
+}
+.work-hour__title {
+}
+.work-hour__days {
+}
+.work-hour__hours {
+}
+
+
+.contacts-footer {
+}
+.contacts-footer__title {
+}
+.contacts-footer__phone {
+}
+.contacts-footer__service {
+}
+.contacts-footer__customer {
+}
+.contacts-footer__socials {
+}
+.contacts-footer__icon {
+}
+
+.phone-contacts {
+}
+.phone-contacts__title {
+}
+.phone-contacts__value {
+}
+
+
+.service-contacts {
+}
+.service-contacts_title {
+}
+.service-contacts__value {
+}
+
+.customer-contacts {
+}
+.customer-contacts__title{
+}
+.customer-contacts__value {
+}
+
+.links-footer {
+}
+.links-footer__title {
+}
+.links-footer__link {
+}
+
+.campaign-footer {
+}
+.campaign-footer__title {
+}
+.campaign-footer__link {
 }

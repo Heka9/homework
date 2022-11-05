@@ -544,6 +544,7 @@ S
 	text-decoration: underline;
 }
 .item-product__label {
+	align-self: flex-start;
 	font-size: 28px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;

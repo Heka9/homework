@@ -895,10 +895,14 @@ S
 
 /* --------------------------------------- */
 
-
 .favorites {
 	padding-top: 30px;
 	padding-bottom: 60px;
+}
+@media (max-width: 767.98px){
+	.favorites {
+		padding-bottom: 30px;
+	}
 }
 .favorites__container {
 	display: flex;
@@ -908,16 +912,36 @@ S
 .favorites__items {
 	align-self: stretch;
 	display: flex;
+	flex-wrap: wrap;
+	row-gap: 40px;
 	align-items: flex-start;
 	margin: 0px -15px;
 }
+
 .favorites__items:not(:last-child){
 	margin-bottom: 55px;
+}
+@media (max-width: 767.98px){
+	.favorites__items:not(:last-child){
+		margin-bottom: 30px;
+	}
 }
 .favorites__column {
 	flex: 0 1 33.3333%;
 	padding: 0px 15px;
-	/* min-height: 100%; */
+}
+@media (max-width: 1180px){
+	.favorites__column {
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 767.98px){
+	.favorites__column {
+		flex: 1 1 100%;
+	}
+	.favorites__items {
+		align-self: center;
+	}
 }
 .favorites__content {
 }
@@ -938,12 +962,17 @@ S
 	box-shadow: 0px 0px 2px 2px #D84727;
 }
 
-
 .content-favorites {
-	/* min-height: 100%; */
 	display: flex;
 	flex-direction: column;
 	row-gap: 32px;
+	align-items: flex-start;
+}
+
+@media (max-width: 450px){
+	.content-favorites {
+		align-items: stretch;
+	}
 }
 .content-favorites__title {
 }
@@ -952,14 +981,15 @@ S
 }
 .content-favorites__item {
 }
-
-
 .item-favorites {
 	display: flex;
 	gap: 24px;
-	flex-wrap: wrap;
 }
-
+@media (max-width: 450px){
+	.item-favorites {
+		flex-wrap: wrap;
+	}
+}
 .item-favorites__image {
 	flex: 0 0 131px;
 	width: 131px;
@@ -970,25 +1000,18 @@ S
 	background: #F1DDC9;
 }
 .item-favorites__image img{
-
+	max-width: 100%;
 }
 .item-favorites__body {
-	/* flex: 1 1 auto; */
-	/* min-width: 185px; */
+
 }
-@media (max-width: 1150px){
-	.item-favorites{
-		/* justify-content: center; */
-		/* flex-wrap: wrap-reverse; */
-	}
-	/* .item-favorites__image {
-		flex: 0 0 131px;
-		width: 131px;
-	}
+@media (max-width: 450px){
 	.item-favorites__body {
 		flex: 1 1 auto;
-	} */
+		min-width: 250px;
+	}
 }
+
 .item-favorites__title {
 	font-size: 24px;
 	line-height: 1.3333;

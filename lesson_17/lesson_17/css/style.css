@@ -763,16 +763,17 @@ body{
 	gap: 8px;
 	visibility: hidden;
 	opacity: 0;
-	width: 0;
-	height: 0;
-	transition: opacity 0.3s ease 0s;
+	width: 0px;
+	min-height: 0px;
+	flex: 0 0 0px;
+	transition: opacity 0.3s ease 0s, min-height 0.3s ease 0s, flex 0.3s ease 0s;
 }
 .card-deals__content:hover .card-deals__buttons{
 	visibility: visible;
 	opacity: 1;
 	width: 100%;
-	height: auto;
-	flex-basis: auto;
+	min-height: 36px;
+	flex: 1 0 36px;
 }
 .card-deals__like {
 	width: 39px;

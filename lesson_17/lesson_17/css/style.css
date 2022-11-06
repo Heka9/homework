@@ -1185,8 +1185,18 @@ body{
 	padding-top: 51px;
 	padding-bottom: 75px;
 }
+@media (max-width: 991.98px){
+	.footer{
+		padding-bottom: 30px;
+	}
+}
 .footer__container {
+	
+}
+.footer__content{
 	display: flex;
+	flex-wrap: wrap;
+	row-gap: 25px;
 }
 
 .footer__info {
@@ -1212,6 +1222,41 @@ body{
 }
 .footer__campaign:not(:last-child){
 	margin-right: 60px;
+}
+
+@media (max-width: 1070px){
+	.footer__content{
+		margin: 0px -15px;
+	}
+	._column{
+		padding: 0px 15px;
+	}
+	.footer__info {
+		flex: 1 1 50%;
+		text-align: center;
+	}
+	.footer__info:not(:last-child){
+		margin-right: 0px;
+	}
+	.footer__contacts {
+		flex: 1 1 50%;
+		align-items: center;
+	}
+	.footer__contacts:not(:last-child){
+		margin-right: 0px;
+	}
+	.footer__links {
+		flex: 1 1 50%;
+	}
+	.footer__links:not(:last-child){
+		margin-right: 0px;
+	}
+	.footer__campaign {
+		flex: 1 1 50%;
+	}
+	.footer__campaign:not(:last-child){
+		margin-right: 0px;
+	}
 }
 
 .info-footer {
@@ -1312,12 +1357,12 @@ body{
 .phone-contacts__value {
 	flex: 1 1 auto;
 	line-height: 2;
-
 }
 
 .service-contacts {
 	display: flex;
 	gap: 36px;
+	justify-content: space-between;
 }
 .service-contacts_title {
 	flex: 0 1 97px;
@@ -1326,12 +1371,12 @@ body{
 .service-contacts__value {
 	flex: 1 1 auto;
 	line-height: 2;
-
 }
 
 .customer-contacts {
 	display: flex;
 	gap: 36px;
+	justify-content: space-between;
 }
 .customer-contacts__title{
 	flex: 0 1 97px;
@@ -1346,7 +1391,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-
 }
 .links-footer__title {
 }
@@ -1360,7 +1404,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-
 }
 .campaign-footer__title {
 }
@@ -1368,4 +1411,51 @@ body{
 	margin-bottom: 16px;
 }
 .campaign-footer__link {
+}
+
+@media (max-width: 1070px){
+	.contacts-footer {
+		align-items: center;
+	}
+	.links-footer {
+		align-items: center;
+	}
+	.campaign-footer {
+		align-items: center;
+	}
+	.phone-contacts  {
+		justify-content: center;
+	}
+	.phone-contacts__value {
+		flex: 0 1 auto;
+	}
+	.service-contacts {
+		justify-content: center;
+	}
+	.service-contacts__value {
+		flex: 0 1 auto;
+	}
+	.customer-contacts {
+		justify-content: center;
+	}
+	.customer-contacts__value {
+		flex: 0 1 auto;
+	}
+}
+@media (max-width: 580px){
+	.footer__info {
+		flex: 1 1 100%;
+		text-align: center;
+	}
+	.footer__contacts {
+		flex: 1 1 100%;
+		align-items: center;
+	}
+	.footer__links {
+		flex: 1 1 100%;
+	}
+	.footer__campaign {
+		flex: 1 1 100%;
+	}
+	
 }

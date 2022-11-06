@@ -152,7 +152,7 @@ body{
 	display: flex;
 	align-items: center;
 	column-gap: 20px;
-	row-gap: 10px;
+	row-gap: 5px;
 	position: relative;
 }
 @media (max-width: 670px){
@@ -162,7 +162,7 @@ body{
 	}
 	.header__logo {
 		flex: 1 0 auto;
-		padding: 10px 0px;
+		padding: 5px 0px;
 	}
 }
 .header__logo {
@@ -275,6 +275,12 @@ body{
 	background: #F1DDC9 url('../img/icons/cart.svg') center no-repeat;
 	border-radius: 50%;
 	transition: background-color 0.3s ease 0s;
+}
+@media (max-width: 680px){
+	.actions-header__card {
+		height: 36px;
+		width: 36px;
+	}
 }
 .actions-header__card:hover{
 	background: rgba(241, 221, 201, 0.7) url('../img/icons/cart.svg') center no-repeat;

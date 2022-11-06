@@ -979,6 +979,7 @@ body{
 	}
 }
 .favorites__content {
+	
 }
 .favorites__button {
 	line-height: 1.6875;
@@ -1010,6 +1011,7 @@ body{
 	}
 }
 .content-favorites__title {
+	align-self: flex-start;
 }
 .content-favorites__title:not(:last-child){
 	margin-bottom: 20px;
@@ -1053,9 +1055,13 @@ body{
 }
 
 .item-favorites__title {
+	display: inline-block;
 	font-size: 24px;
 	line-height: 1.3333;
 	letter-spacing: 0.02em;
+}
+.item-favorites__title:hover{
+	text-decoration: underline;
 }
 .item-favorites__title:not(:last-child){
 	margin-bottom: 4px;

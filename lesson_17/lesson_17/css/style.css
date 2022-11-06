@@ -1033,8 +1033,13 @@ body{
 	justify-content:center;
 	align-items: center;
 	background: #F1DDC9;
+	overflow: hidden;
+}
+.item-favorites__image:hover img{
+	transform: scale(1.1);
 }
 .item-favorites__image img{
+	transition: transform 0.3s ease 0s;
 	max-width: 100%;
 }
 .item-favorites__body {
@@ -1184,6 +1189,7 @@ body{
 	color: #fff;
 	padding-top: 51px;
 	padding-bottom: 75px;
+	position: relative;
 }
 @media (max-width: 991.98px){
 	.footer{
@@ -1364,7 +1370,7 @@ body{
 	gap: 36px;
 	justify-content: space-between;
 }
-.service-contacts_title {
+.service-contacts__title {
 	flex: 0 1 97px;
 
 }
@@ -1457,5 +1463,18 @@ body{
 	.footer__campaign {
 		flex: 1 1 100%;
 	}
-	
+}
+.footer__decor{
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url('../img/footer/decor/01.svg') -1.2% 96.13% / 399px 216px no-repeat, url('../img/footer/decor/02.svg') -1.2% 111.7% / 413px 226px no-repeat, url('../img/footer/decor/03.svg') 97.2% -8.43% / 399px 216px no-repeat, url('../img/footer/decor/04.svg') 97.25% 17.14% / 413px 226px no-repeat;
+}
+@media (max-width: 1150px){
+	.footer__decor{
+		display: none;
+	}
 }

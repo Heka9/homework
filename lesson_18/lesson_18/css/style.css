@@ -1,0 +1,28 @@
+@import "reset.css";
+
+@import url("https://fonts.googleapis.com/css?family=Taviraj:300,regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:regular&display=swap");
+
+body{
+	font-family: "Taviraj";
+	color: #333;
+	background-color: #F7F6F4;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+
+[class*="__container"]{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+/*----------------------------------------------------------*/

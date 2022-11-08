@@ -549,8 +549,8 @@ body{
 }
 .item-gallery__body {
 	transition: opacity 2s ease 0s;
-	visibility: hidden;
-	opacity: 0;
+	/* visibility: hidden;
+	opacity: 0; */
 	font-family: 'Poppins';
 	display: flex;
 	flex-direction: column;
@@ -591,11 +591,11 @@ body{
 .item-gallery_5{
 
 }
-[class*="_ibg"]{
+[class$="_ibg"]{
 	position: relative;
 	padding-bottom: 95.8%;
 }
-[class*="_ibg"] img{
+[class$="_ibg"] img{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -603,11 +603,11 @@ body{
 	left: 0;
 	object-fit: cover;
 }
-[class*="_ibg-wide"]{
+[class$="_ibg-wide"]{
 	position: relative;
 	padding-bottom: 45.19%;
 }
-[class*="_ibg-wide"] img{
+[class$="_ibg-wide"] img{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -615,15 +615,95 @@ body{
 	left: 0;
 	object-fit: cover;
 }
-[class*="_ibg-high"]{
+[class$="_ibg-high"]{
 	position: relative;
 	padding-bottom: 203.51%;
 }
-[class*="_ibg-high"] img{
+[class$="_ibg-high"] img{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	object-fit: cover;
+}
+@media (max-width: 1180px){
+	.item-gallery__title {
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	.item-gallery__location {
+		font-size: 16px;
+		line-height: 1.4;
+	}
+}
+
+@media (max-width: 991.98px){
+	.gallery {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.gallery__items {
+		gap: 25px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.item-gallery {
+		border-radius: 25px;
+	}
+	.item-gallery_1{
+		grid-column: span 1;
+	}
+	.item-gallery_2{
+		grid-row: span 1;
+	}
+	.item-gallery_3{
+		grid-row: span 1;
+	}
+	[class*="_ibg"]{
+		position: relative;
+		padding-bottom: 95.8%;
+	}
+	[class*="_ibg"] img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+	.item-gallery:first-child .item-gallery__body{
+		padding-left: 30px;
+	}
+	.item-gallery__body {
+		padding: 20px 25px;
+	}
+}
+@media (max-width: 767.98px){
+	.gallery {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.gallery__items {
+		gap: 20px;
+	}
+	.gallery__title {
+		font-size: 28px;
+	}
+	.gallery__items {
+		gap: 15px;
+	}
+	.item-gallery__title {
+		font-size: 18px;
+	}
+	.item-gallery__location {
+		font-size: 14px;
+	}
+	.item-gallery__body {
+		padding: 20px;
+	}
+}
+@media (max-width: 479.98px){
+	.gallery__items {
+		grid-template-columns: 1fr;
+	}
 }

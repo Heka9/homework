@@ -525,9 +525,14 @@ body{
 	overflow: hidden;
 	position: relative; 
 }
-.item-gallery:hover img{
-	transform: scale(1.05);
+@media (any-hover: hover){
+	.item-gallery:hover img{
+		transform: scale(1.05);
+	}
 }
+/* .item-gallery:hover img{
+	transform: scale(1.05);
+} */
 .item-gallery img{
 	transition: transform 0.4s ease 0s;
 	border-radius: 16px;
@@ -536,16 +541,15 @@ body{
 	padding-left: 60px;
 }
 @media (any-hover: hover){
-	.item-gallery__body{
-		visibility: hidden;
-		opacity: 0;
-	}
 	.item-gallery:hover .item-gallery__body{
 		visibility: visible;
 		opacity: 1;
 	}
+	.item-gallery__body{
+		visibility: hidden;
+		opacity: 0;
+	}
 }
-
 .item-gallery__body {
 	transition: opacity 2s ease 0s;
 	font-family: 'Poppins';

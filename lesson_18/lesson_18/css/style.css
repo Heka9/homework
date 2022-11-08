@@ -532,25 +532,22 @@ body{
 	transition: transform 0.4s ease 0s;
 	border-radius: 16px;
 }
+.item-gallery:first-child .item-gallery__body{
+	padding-left: 60px;
+}
 @media (any-hover: hover){
+	.item-gallery__body{
+		visibility: hidden;
+		opacity: 0;
+	}
 	.item-gallery:hover .item-gallery__body{
 		visibility: visible;
 		opacity: 1;
 	}
 }
-@media (hover: none){
-	.item-gallery__body{
-		visibility: visible;
-		opacity: 1;
-	}
-}
-.item-gallery:first-child .item-gallery__body{
-	padding-left: 60px;
-}
+
 .item-gallery__body {
 	transition: opacity 2s ease 0s;
-	/* visibility: hidden;
-	opacity: 0; */
 	font-family: 'Poppins';
 	display: flex;
 	flex-direction: column;

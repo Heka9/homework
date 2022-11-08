@@ -33,6 +33,8 @@ body{
 }
 .page__form {
 }
+.page__gallery {
+}
 
 /* ---------------------------------- */
 
@@ -191,7 +193,6 @@ body{
 .form {
 	padding-top: 40px;
 	padding-bottom: 50px;
-	
 }
 .form__container {
 }
@@ -491,3 +492,136 @@ body{
 	}
 }
 
+/* -------------------------------- */
+
+
+.gallery {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.gallery__container {
+}
+.gallery__title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1.22;
+}
+.gallery__title:not(:last-child){
+	margin-bottom: 34px;
+}
+.gallery__items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 34px;
+	/* grid-auto-rows: 1fr; */
+}
+
+.gallery__item {
+}
+.item-gallery {
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative; 
+}
+.item-gallery:hover img{
+	transform: scale(1.05);
+}
+.item-gallery img{
+	transition: transform 0.4s ease 0s;
+	border-radius: 16px;
+}
+@media (any-hover: hover){
+	.item-gallery:hover .item-gallery__body{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+@media (hover: none){
+	.item-gallery__body{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.item-gallery:first-child .item-gallery__body{
+	padding-left: 60px;
+}
+.item-gallery__body {
+	transition: opacity 1s ease 0s;
+	visibility: hidden;
+	opacity: 0;
+	font-family: 'Poppins';
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px 30px;
+	position: absolute;
+	width: 100%;
+	height: 37%;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(360deg, rgba(34, 37, 52, 0.6) 0%, rgba(34, 37, 52, 0) 100%);
+	border-radius: 14px;
+}
+.item-gallery__title {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 1.5;
+}
+.item-gallery__title:not(:lang()){
+	margin-bottom: 5px;
+}
+.item-gallery__location {
+	line-height: 1.5;
+}
+.item-gallery_1{
+	grid-column: span 2;
+}
+
+.item-gallery_2{
+	grid-row: span 2;
+}
+.item-gallery_3{
+	grid-row: span 2;
+}
+.item-gallery_4{
+
+}
+.item-gallery_5{
+
+}
+[class*="_ibg"]{
+	position: relative;
+	padding-bottom: 95.8%;
+}
+[class*="_ibg"] img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+[class*="_ibg-wide"]{
+	position: relative;
+	padding-bottom: 45.19%;
+}
+[class*="_ibg-wide"] img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+[class*="_ibg-high"]{
+	position: relative;
+	padding-bottom: 203.51%;
+}
+[class*="_ibg-high"] img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}

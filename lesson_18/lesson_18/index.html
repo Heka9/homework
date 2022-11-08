@@ -12,13 +12,109 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link">Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Trips</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">About</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Support</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Travel</a>
+						</li>
+					</ul>
+				</nav>
+				<button type="button" class="header__button">Sign Up</button>
+			</div>
 		</header>
 		<main class="page">
+			<div class="page__main-block main-block">
+				<div class="main-block__container">
+					<h1 class="main-block__title">It Matters Who You Travel With</h1>
+					<div class="main-block__text">We want you to feel confident in the travel experience you will have with us.</div>
+				</div>
+			</div>
+			<div class="page__form form">
+				<div class="form__container">
+					<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__search search-form">
+						<div class="search-form__header header-search-form">
+							<button type="button" class="header-search-form__kind">Stays</button>
+							<button type="button" class="header-search-form__kind active">Flight</button>
+							<button type="button" class="header-search-form__kind">Cars</button>
+							<button type="button" class="header-search-form__kind">Packages</button>
+							<button type="button" class="header-search-form__kind">Things to do</button>
+						</div>
+						<div class="search-form__setting settings-search-form">
+							<div class="settings-search-form__type">
+								<div class="settings-search-form__radio">
+									<input required type="radio" id="One-way" name="trip-type" value="One-way"
+										class="settings-search-form__input settings-form__input_radio">
+									<label for="One-way" class="settings-search-form__label">One-way</label>
+								</div>
+								<div class="settings-search-form__radio">
+									<input required type="radio" id="Return" name="trip-type" value="Return"
+										class="settings-search-form__input settings-search-form__input_radio">
+									<label for="Return" class="settings-search-form__label">Return</label>
+								</div>
+								<div class="settings-search-form__radio">
+									<input required type="radio" id="Multi-city" name="trip-type" value="Multi-city"
+										class="settings-search-form__input settings-search-form__input_radio">
+									<label for="Multi-city" class="settings-search-form__label">Multi-city</label>
+								</div>
+							</div>
+							<div class="settings-search-form__add">
+								<div class="settings-search-form__col">
+									<select name="travelers" class="settings-search-form__select-traveler">
+										<option value="one-person" class="settings-search-form__option">1 traveller</option>
+										<option value="two-person" class="settings-search-form__option">2 travellers</option>
+										<option value="three-person" class="settings-search-form__option">3 travellers</option>
+									</select>
+								</div>
+								<div class="settings-search-form__col">
+									<select name="ticket" class="settings-search-form__select-ticket">
+										<option value="Economy" class="settings-search-form__option">Economy</option>
+										<option value="Bussiness" class="settings-search-form__option">Bussiness</option>
+										<option value="VIP" class="settings-search-form__option">VIP</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="search-form__route route-search-form">
+							<div class="route-search-form__column">
+								<input type="text" name="from" placeholder="from" class="route-search-form__input-from route-input">
+								<span></span>
+							</div>
+							<button class="route-search-form__swap"></button>
+							<div class="route-search-form__column">
+								<input type="text" name="to" placeholder="to" class="route-search-form__input-to route-input">
+								<span></span>
+							</div>
+							<div class="route-search-form__column route-search-form__column_date">
+								<input type="date" name="departing" class="route-search-form__input-date-depart route-input">
+							</div>
+							<div class="route-search-form__column route-search-form__column_date">
+								<input type="date" name="returning" class="route-search-form__input-date-return route-input">
+							</div>
+						</div>
+						<button type="submit" class="search-form__button">Search</button>
+					</form>
+				</div>
+			</div>
 			
 		</main>
 		<footer class="footer">
-			
+
 		</footer>
 	</div>
 </body>

@@ -35,7 +35,8 @@ body{
 }
 .page__gallery {
 }
-
+.page__download {
+}
 /* ---------------------------------- */
 
 .header {
@@ -525,23 +526,24 @@ body{
 	overflow: hidden;
 	position: relative; 
 }
-@media (any-hover: hover){
+/* @media (any-hover: hover){
 	.item-gallery:hover img{
 		transform: scale(1.05);
 	}
-}
+} */
 /* .item-gallery:hover img{
 	transform: scale(1.05);
 } */
 .item-gallery img{
-	transition: transform 0.4s ease 0s;
+	/* transition: transform 0.4s ease 0s; */
 	border-radius: 16px;
 }
 .item-gallery:first-child .item-gallery__body{
 	padding-left: 60px;
 }
-@media (any-hover: hover){
+/* @media (any-hover: hover){
 	.item-gallery__body{
+		transition: opacity 2s ease 0s;
 		visibility: hidden;
 		opacity: 0;
 	}
@@ -549,10 +551,10 @@ body{
 		visibility: visible;
 		opacity: 1;
 	}
-}
+} */
 
 .item-gallery__body {
-	transition: opacity 2s ease 0s;
+	/* transition: opacity 2s ease 0s; */
 	font-family: 'Poppins';
 	display: flex;
 	flex-direction: column;
@@ -708,4 +710,62 @@ body{
 	.gallery__items {
 		grid-template-columns: 1fr;
 	}
+}
+
+@media (any-hover: hover){
+	.item-gallery img{
+		transition: transform 0.4s ease 0s;
+	}
+	.item-gallery:hover img{
+		transform: scale(1.05);
+	}
+}
+
+@media (any-hover: hover){
+	.item-gallery__body{
+		transition: opacity 2s ease 0s;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.item-gallery:hover .item-gallery__body{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+/* ---------------------------------- */
+
+
+.download {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.download__container {
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+}
+.download__title {
+	text-align: center;
+	max-width: 227px;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1.22;
+}
+.download__title:not(:last-child){
+	margin-bottom: 30px;
+}
+.download__items {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.download__item {
+}
+.download__item img{
+	max-width: 100%;
+}
+.download__item-1 img{
+	margin: -20px;
 }

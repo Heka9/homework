@@ -98,10 +98,10 @@ body{
 .menu__item {
 }
 .menu__link {
-	transition: font-weight 0.3s ease 0s;
+	transition: text-shadow 0.3s ease 0s;
 }
 .menu__link:hover{
-	font-weight: 700;
+	text-shadow: 0px 0px 5px #fff;
 }
 .header__button {
 	flex: 0 0 auto;

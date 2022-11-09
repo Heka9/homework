@@ -332,7 +332,7 @@ body{
 .settings-search-form__col {
 }
 .settings-search-form__select-traveler {
-	background-color: none;
+	background-color: transparent;
 	font-size: 14px;
 	line-height: 1.21;
 	color: #1F4AA8;
@@ -341,7 +341,7 @@ body{
 
 }
 .settings-search-form__select-ticket {
-	background-color: none;
+	background-color: transparent;
 	font-size: 14px;
 	line-height: 1.21;
 	color: #1F4AA8;
@@ -541,15 +541,16 @@ body{
 	padding-left: 60px;
 }
 @media (any-hover: hover){
-	.item-gallery:hover .item-gallery__body{
-		visibility: visible;
-		opacity: 1;
-	}
 	.item-gallery__body{
 		visibility: hidden;
 		opacity: 0;
 	}
+	.item-gallery:hover .item-gallery__body{
+		visibility: visible;
+		opacity: 1;
+	}
 }
+
 .item-gallery__body {
 	transition: opacity 2s ease 0s;
 	font-family: 'Poppins';

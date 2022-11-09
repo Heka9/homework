@@ -38,6 +38,29 @@ body{
 .page__download {
 }
 /* ---------------------------------- */
+.title-footer {
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: 0.05em;
+}
+.list-footer {
+}
+.list-footer__item {
+}
+.list-footer__item:not(:last-child){
+	margin-bottom: 10px;
+}
+.list-footer__link {
+	font-size: 14px;
+	line-height: 1.21;
+	letter-spacing: 0.05em;
+}
+@media (any-hover: hover){
+	.list-footer__link:hover {
+		text-decoration: underline;
+	}
+}
+/* --------------------------------- */
 
 .header {
 	position: absolute;
@@ -760,12 +783,134 @@ body{
 	display: flex;
 	justify-content:center;
 	align-items: center;
+	gap: 30px;
 }
 .download__item {
 }
-.download__item img{
-	max-width: 100%;
+.download__item img{		
 }
 .download__item-1 img{
 	margin: -20px;
+}
+
+@media (max-width: 991.98px){
+	.download {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767.98px){
+	.download {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.download__title {
+		font-size: 28px;
+	}
+}
+@media (max-width: 767.98px){
+	.download__items{
+		flex-direction: column;
+	}
+}
+
+/* ----------------------------- */
+
+.footer {
+	background: #133B5C;
+	padding-top: 50px;
+	padding-bottom: 130px;
+}
+
+.footer__container {
+	display: grid;
+	gap: 50px;
+	/* grid-template-columns: repeat(auto-fit, minmax(auto, 245px)); */
+	grid-template-columns: repeat(6, auto);
+	grid-auto-rows: 1fr;
+}
+.footer__info {
+}
+.footer__company {
+}
+.footer__explore {
+}
+.footer__term {
+}
+.footer__help {
+}
+.footer__feedback {
+}
+
+
+.info-footer {
+	padding-right: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	justify-content: space-between;
+}
+.info-footer__logo {
+}
+.info-footer__text {
+}
+
+
+.company-footer {
+}
+.company-footer__title {
+}
+.company-footer__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.explore-footer {
+}
+.explore-footer__title {
+}
+.explore-footer__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.term-footer {
+}
+.term-footer__title {
+}
+.term-footer__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.help-footer {
+}
+.help-footer__title {
+}
+.help-footer__title:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.feedback-footer {
+}
+.feedback-footer__title {
+}
+.feedback-footer__title:not(:last-child){
+	margin-bottom: 10px;
+}
+.feedback-footer__text {
+}
+.feedback-footer__socials {
+}
+.feedback-footer__icon {
+}
+
+@media (max-width: 991.98px){
+	.footer {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+}
+@media (max-width: 767.98px){
+	.footer {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
 }

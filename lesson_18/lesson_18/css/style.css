@@ -260,7 +260,6 @@ body{
 	background-color:#133B5C;
 }
 
-
 .header-search-form {
 	font-weight: 600;
 	line-height: 1.25;
@@ -460,6 +459,9 @@ body{
 }
 
 @media (max-width: 767.98px){
+	.form{
+		padding-bottom: 40px;
+	}
 	.form__search {
 		padding: 15px 20px 15px 20px;
 	}

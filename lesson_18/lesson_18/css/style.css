@@ -960,18 +960,24 @@ body{
 	.footer__container {
 		grid-template-columns: 1fr;
 		grid-auto-rows: auto;
+		text-align: center;
+		justify-items: center;
 	}
 	.info-footer{
-		gap: 25px;
+		gap: 40px;
 	}
 	.feedback-footer {
 		max-width: 250px;
 		gap: 15px;
+		align-items: center;
 	}
 	.feedback-footer__text:not(:last-child) {
 		margin-bottom: 20px;
 	}
 	.feedback-footer__socials {
 		gap: 50px;
+		justify-content: center;
+	}
+	.feedback-footer__text {
 	}
 }

@@ -957,9 +957,17 @@ body{
 @media (max-width: 477.98px){
 	.footer__container {
 		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+	}
+	.info-footer{
+		gap: 25px;
 	}
 	.feedback-footer {
 		max-width: 250px;
+		gap: 15px;
+	}
+	.feedback-footer__text:not(:last-child) {
+		margin-bottom: 20px;
 	}
 	.feedback-footer__socials {
 		gap: 50px;

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Travellian</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221127135742">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/Logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Explore</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Travel</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-da=".menu__body, 767.98" class="header__actions">
+					<a href="" class="header__login">Login</a>
+					<button class="header__button button">Sign up</button>
+				</div>
+				<button type="button" class="header__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main data-fp data-fp-bullets class="page">
+			<section data-fp-section class="page__main-block main-block">
+				<div class="main-block__container">
+					<h1 class="main-block__title">Start your unforgettable <br> journey with us.</h1>
+					<div class="main-block__text">The best travel for your jouney begins now</div>
+					<form action="" class="main-block__form form">
+						<div class="form__column">
+							<label for="destination" class="form__label">Destination</label>
+							<input id="destination" autocomplete="off" type="text" name="form[destination]" data-error="Ошибка" placeholder="" class="form__input">
+						</div>
+						<div class="form__column">
+							<label for="person" class="form__label">Person</label>
+							<select id="person" name="form[person]" data-class-modif="form" class="form__select select">
+								<option value="1">1</option>
+								<option value="2" selected>2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div>
+						<div class="form__column">
+							<label for="check-in" class="form__label form__label-date">Check in</label>
+							<div class="form__data _icon-select-arrow-down">
+								<input id="check-in" autocomplete="off" type="text" name="form[check-in]" data-error="Ошибка" placeholder="" class="data-input-in">
+							</div>
+						</div>
+						<div class="form__column">
+							<label for="check-out" class="form__label form__label-date">Check out</label>
+							<div class="form__data _icon-select-arrow-down">
+								<input id="check-out" autocomplete="off" type="text" name="form[check-out]" data-error="Ошибка" placeholder="" class="data-input-out">
+							</div>
+						</div>
+						<button type="submit" class="form__button button _icon-arrow"><span>Book Now</span></button>
+					</form>
+					<div class="main-block__scroll scroll-main-block">
+						<div class="scroll-main-block__circles">
+							<div class="scroll-main-block__circle"></div>
+						</div>
+						<div class="scroll-main-block__arrows">
+							<button type="button" class="scroll-main-block__arrow"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__destinations destinations">
+				<div class="destinations__container">
+					<div class="destinations__header">
+						<div class="destinations__title title-block">
+							<h2 class="title-block__main">Popular Destinations</h2>
+							<div class="title-block__text">Most popular destinations around the world, from historical places
+								to natural wonders.</div>
+						</div>
+						<div data-da=".destinations__container,767.98" class="destinations__navigation">
+							<button class="destinations__button destinations__button_left _icon-select-arrow-down"></button>
+							<button class="destinations__button destinations__button_right _icon-select-arrow-down"></button>
+						</div>
+					</div>
+					<div class="destinations__slider swiper">
+						<div class="destinations__wrapper swiper-wrapper">
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/Berlin.webp" type="image/webp"><img src="img/destination/Berlin.jpg" alt="Berlin"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Monument of Berlin</h4>
+									<div class="slide-destination__location _icon-location"><span>Berlin, Germany</span></div>
+								</div>
+							</a>
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/London.webp" type="image/webp"><img src="img/destination/London.jpg" alt="London"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Millennium Bridge
+									</h4>
+									<div class="slide-destination__location _icon-location">London, United Kingdom</div>
+								</div>
+							</a>
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/Venice.webp" type="image/webp"><img src="img/destination/Venice.jpg" alt="Venice"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Rialto Bridge
+									</h4>
+									<div class="slide-destination__location _icon-location">Venice, Italy</div>
+								</div>
+							</a>
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/Lisbon.webp" type="image/webp"><img src="img/destination/Lisbon.jpg" alt="Lisbon"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Sea of Orange Tiles
+									</h4>
+									<div class="slide-destination__location _icon-location">Lisbon, Portugal</div>
+								</div>
+							</a>
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/Berlin.webp" type="image/webp"><img src="img/destination/Berlin.jpg" alt="Berlin"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Monument of Berlin</h4>
+									<div class="slide-destination__location _icon-location"><span>Berlin, Germany</span></div>
+								</div>
+							</a>
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/London.webp" type="image/webp"><img src="img/destination/London.jpg" alt="London"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Millennium Bridge
+									</h4>
+									<div class="slide-destination__location _icon-location">London, United Kingdom</div>
+								</div>
+							</a>
+							<a href="" class="destinations__slide swiper-slide slide-destination">
+								<div class="slide-destination__image-ibg">
+									<picture><source srcset="img/destination/Venice.webp" type="image/webp"><img src="img/destination/Venice.jpg" alt="Venice"></picture>
+								</div>
+								<div class="slide-destination__content">
+									<h4 class="slide-destination__title">Rialto Bridge
+									</h4>
+									<div class="slide-destination__location _icon-location">Venice, Italy</div>
+								</div>
+							</a>
+						</div>
+					</div>
+			</section>
+			<section data-fp-section class="page__offer offer">
+				<div class="offer__container">
+					<div class="offer__header">
+						<div data-da=".offer__container,767.98" class="offer__navigation">
+							<button class="offer__button offer__button_left _icon-select-arrow-down"></button>
+							<button class="offer__button offer__button_right _icon-select-arrow-down"></button>
+						</div>
+						<div class="offer__title title-block title-block_right">
+							<h2 class="title-block__main title-block__main_right-decor">Special Offer</h2>
+							<div class="title-block__text">Check out our special offer and discounts</div>
+						</div>
+					</div>
+					<div class="offer__slider swiper">
+						<div class="offer__wrapper swiper-wrapper">
+							<article class="offer__slide swiper-slide slide-offer">
+								<a href="" class="slide-offer__image-ibg">
+									<picture><source srcset="img/offer/lisbon.webp" type="image/webp"><img src="img/offer/lisbon.jpg" alt="Lisbon"></picture>
+								</a>
+								<div class="slide-offer__content">
+									<div class="slide-offer__header">
+										<h4 class="slide-offer__title"><a href="" class="slide-offer__link-title">Lisbon,
+												Portugal</a></h4>
+										<div class="slide-offer__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+									</div>
+									<p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature. 5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature.</p>
+									<div class="slide-offer__footer">
+										<div class="slide-offer__price">
+											<div class="slide-offer__word">From</div>
+											<div class="slide-offer__value">€500</div>
+										</div>
+										<button class="slide-offer__button button">Details</button>
+									</div>
+								</div>
+							</article>
+							<article class="offer__slide swiper-slide slide-offer">
+								<div class="slide-offer__image-ibg">
+									<picture><source srcset="img/offer/athens.webp" type="image/webp"><img src="img/offer/athens.jpg" alt="Athens"></picture>
+								</div>
+								<div class="slide-offer__content">
+									<div class="slide-offer__header">
+										<h4 class="slide-offer__title"><a href="" class="slide-offer__link-title">Athens,
+												Greece</a></h4>
+										<div class="slide-offer__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+									</div>
+									<p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature.</p>
+									<div class="slide-offer__footer">
+										<div class="slide-offer__price">
+											<div class="slide-offer__word">From</div>
+											<div class="slide-offer__value">€800</div>
+										</div>
+										<button class="slide-offer__button button">Details</button>
+									</div>
+								</div>
+							</article>
+							<article class="offer__slide swiper-slide slide-offer">
+								<div class="slide-offer__image-ibg">
+									<picture><source srcset="img/offer/rome.webp" type="image/webp"><img src="img/offer/rome.jpg" alt="Rome"></picture>
+								</div>
+								<div class="slide-offer__content">
+									<div class="slide-offer__header">
+										<h4 class="slide-offer__title"><a href="" class="slide-offer__link-title">Rome, Italy</a>
+										</h4>
+										<div class="slide-offer__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+									</div>
+									<p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature.</p>
+									<div class="slide-offer__footer">
+										<div class="slide-offer__price">
+											<div class="slide-offer__word">From</div>
+											<div class="slide-offer__value">€750</div>
+										</div>
+										<button class="slide-offer__button button">Details</button>
+									</div>
+								</div>
+							</article>
+							<article class="offer__slide swiper-slide slide-offer">
+								<div class="slide-offer__image-ibg">
+									<picture><source srcset="img/offer/athens.webp" type="image/webp"><img src="img/offer/athens.jpg" alt="Athens"></picture>
+								</div>
+								<div class="slide-offer__content">
+									<div class="slide-offer__header">
+										<h4 class="slide-offer__title"><a href="" class="slide-offer__link-title">Athens,
+												Greece</a></h4>
+										<div class="slide-offer__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+									</div>
+									<p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature.</p>
+									<div class="slide-offer__footer">
+										<div class="slide-offer__price">
+											<div class="slide-offer__word">From</div>
+											<div class="slide-offer__value">€800</div>
+										</div>
+										<button class="slide-offer__button button">Details</button>
+									</div>
+								</div>
+							</article>
+							<article class="offer__slide swiper-slide slide-offer">
+								<div class="slide-offer__image-ibg">
+									<picture><source srcset="img/offer/rome.webp" type="image/webp"><img src="img/offer/rome.jpg" alt="Rome"></picture>
+								</div>
+								<div class="slide-offer__content">
+									<div class="slide-offer__header">
+										<h4 class="slide-offer__title"><a href="" class="slide-offer__link-title">Rome, Italy</a>
+										</h4>
+										<div class="slide-offer__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+									</div>
+									<p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature.</p>
+									<div class="slide-offer__footer">
+										<div class="slide-offer__price">
+											<div class="slide-offer__word">From</div>
+											<div class="slide-offer__value">€750</div>
+										</div>
+										<button class="slide-offer__button button">Details</button>
+									</div>
+								</div>
+							</article>
+							<article class="offer__slide swiper-slide slide-offer">
+								<div class="slide-offer__image-ibg">
+									<picture><source srcset="img/offer/lisbon.webp" type="image/webp"><img src="img/offer/lisbon.jpg" alt="Lisbon"></picture>
+								</div>
+								<div class="slide-offer__content">
+									<div class="slide-offer__header">
+										<h4 class="slide-offer__title"><a href="" class="slide-offer__link-title">Lisbon,
+												Portugal</a></h4>
+										<div class="slide-offer__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+									</div>
+									<p class="slide-offer__text">5 nights and 4 days in 5 star hotel, breakfast and lunch
+										included. Very popular during the renaissance. Passage and going through the cites of the
+										world in classical literature.</p>
+									<div class="slide-offer__footer">
+										<div class="slide-offer__price">
+											<div class="slide-offer__word">From</div>
+											<div class="slide-offer__value">€500</div>
+										</div>
+										<button class="slide-offer__button button">Details</button>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__blog blog">
+				<div class="blog__container">
+					<div class="blog__title title-block">
+						<h2 class="title-block__main">Our Blog</h2>
+						<div class="title-block__text">An insight the incredible experience in the world</div>
+					</div>
+					<div class="blog__body">
+						<div class="blog__image">
+							<picture><source srcset="img/blog/image.webp" type="image/webp"><img src="img/blog/image.jpg" alt="Image"></picture>
+						</div>
+						<div class="blog__content content-blog">
+							<h4 class="content-blog__title">Beautiful Italy<br>Let’s travel</h4>
+							<div class="content-blog__text">But I must explain to you how all this mistaken idea of denouncing
+								pleasure and praising pain was born and I will give you a complete account of the system and
+								expound the actual teachings of the great explorer of the truth, the master- builder of human
+								happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but
+								because those who do not know how to pursue pleasure rationally encounter consequences that are
+								extremly painful. Nor again is there anyone who loves or pursues.</div>
+							<a href="" class="content-blog__link _icon-arrow"><span>Read More</span></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__trip trip">
+				<div class="trip__container">
+					<div class="trip__content">
+						<div class="trip__title title-block">
+							<h2 class="title-block__main">Trip Planners</h2>
+							<div class="title-block__text">20 years from now you will be more disappointed by the things that
+								you didn’t do. Stop regretting and start travelling, start throwing off the bowlines.</div>
+						</div>
+						<a href="" class="trip__button button button_small">View all trip plans</a>
+					</div>
+					<div class="trip__slider swiper">
+						<div class="trip__wrapper swiper-wrapper">
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/01.webp" type="image/webp"><img src="img/trip/01.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€99/Day</div>
+									</div>
+									<a href="" class="body-slide-trip__name">Paris City Tour</a>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">7 Days tour</div>
+									</div>
+								</div>
+							</article>
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/02.webp" type="image/webp"><img src="img/trip/02.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€89/Day</div>
+									</div>
+									<a href="" class="body-slide-trip__name">Paris City Tour</a>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">6 Days tour</div>
+									</div>
+								</div>
+							</article>
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/03.webp" type="image/webp"><img src="img/trip/03.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€109/Day</div>
+									</div>
+									<div class="body-slide-trip__name">Paris City Tour</div>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">8 Days tour</div>
+									</div>
+								</div>
+							</article>
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/04.webp" type="image/webp"><img src="img/trip/04.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€79/Day</div>
+									</div>
+									<div class="body-slide-trip__name">Paris City Tour</div>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">9 Days tour</div>
+									</div>
+								</div>
+							</article>
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/03.webp" type="image/webp"><img src="img/trip/03.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€109/Day</div>
+									</div>
+									<div class="body-slide-trip__name">Paris City Tour</div>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">8 Days tour</div>
+									</div>
+								</div>
+							</article>
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/01.webp" type="image/webp"><img src="img/trip/01.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€99/Day</div>
+									</div>
+									<a href="" class="body-slide-trip__name">Paris City Tour</a>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">7 Days tour</div>
+									</div>
+								</div>
+							</article>
+							<article class="trip__slide swiper-slide slide-trip">
+								<a href="" class="slide-trip__image-ibg">
+									<picture><source srcset="img/trip/04.webp" type="image/webp"><img src="img/trip/04.jpg" alt="Image"></picture>
+								</a>
+								<div class="slide-trip__body body-slide-trip">
+									<div class="body-slide-trip__header">
+										<div class="body-slide-trip__type">Guided Tour</div>
+										<div class="body-slide-trip__price">€79/Day</div>
+									</div>
+									<div class="body-slide-trip__name">Paris City Tour</div>
+									<div class="body-slide-trip__footer">
+										<div class="content-slide-trip__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value"></div>
+										</div>
+										<div class="body-slide-trip__period">9 Days tour</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__gallary gallery">
+				<div class="gallery__container">
+					<div class="gallery__header">
+						<div class="gallery__title title-block">
+							<h2 class="title-block__main">Destination Gallery</h2>
+							<div class="title-block__text">Our photo gallery on trip</div>
+						</div>
+						<div data-da=".gallery__container,767.98" class="gallery__navigation">
+							<button class="gallery__button gallery__button_left _icon-select-arrow-down"></button>
+							<button class="gallery__button gallery__button_right _icon-select-arrow-down"></button>
+						</div>
+					</div>
+					<div class="gallery__slider swiper">
+						<div data-gallery class="gallery__wrapper swiper-wrapper">
+							<a href="img/gallery/01.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/01.webp" type="image/webp"><img src="img/gallery/01.jpg" alt="Image"></picture>
+								</div>
+							</a>
+							<a href="img/gallery/02.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/02.webp" type="image/webp"><img src="img/gallery/02.jpg" alt="Image"></picture>
+								</div>
+							</a>
+							<a href="img/gallery/03.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/03.webp" type="image/webp"><img src="img/gallery/03.jpg" alt="Image"></picture>
+								</div>
+							</a>
+							<a href="img/gallery/04.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/04.webp" type="image/webp"><img src="img/gallery/04.jpg" alt="Image"></picture>
+								</div>
+							</a>
+							<a href="img/gallery/02.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/02.webp" type="image/webp"><img src="img/gallery/02.jpg" alt="Image"></picture>
+								</div>
+							</a>
+							<a href="img/gallery/03.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/03.webp" type="image/webp"><img src="img/gallery/03.jpg" alt="Image"></picture>
+								</div>
+							</a>
+							<a href="img/gallery/01.jpg" class="gallery__slide swiper-slide">
+								<div class="gallery__image-ibg">
+									<picture><source srcset="img/gallery/01.webp" type="image/webp"><img src="img/gallery/01.jpg" alt="Image"></picture>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-fp-section class="page__feedback feedback">
+				<div class="feedback__container">
+					<div class="feedback__title title-block">
+						<h2 class="title-block__main">Traveler’s Experiences</h2>
+						<div class="title-block__text">Here some awesome feedback from our travelers</div>
+					</div>
+					<div class="feedback__slider swiper">
+						<div class="feedback__wrapper swiper-wrapper">
+							<article class="feedback__slide swiper-slide slide-feedback">
+								<div class="slide-feedback__avatar">
+									<img src="img/feedback/John Doe.jpg" alt="John Doe">
+								</div>
+								<div class="slide-feedback__body">
+									<p class="slide-feedback__text">But I must explain to you how all this mistaken idea of
+										denouncing pleasure and praising pain was born and I will give you a complete account of
+										the system and expound the actual teachings of the great explorer of the truth, the
+										master- builder of human happiness.</p>
+									<div class="slide-feedback__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value"></div>
+									</div>
+									<div class="slide-feedback__author">
+										<div class="slide-feedback__name">John Doe</div>
+										<div class="slide-feedback__position">Accountant</div>
+									</div>
+								</div>
+							</article>
+							<article class="feedback__slide swiper-slide slide-feedback">
+								<div class="slide-feedback__avatar">
+									<img src="img/feedback/John Smith.jpg" alt="John Smith">
+								</div>
+								<div class="slide-feedback__body">
+									<p class="slide-feedback__text">But I must explain to you how all this mistaken idea of
+										denouncing pleasure and praising pain was born and I will give you a complete account of
+										the system and expound the actual teachings of the great explorer of the truth, the
+										master- builder of human happiness.</p>
+									<div class="slide-feedback__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value"></div>
+									</div>
+									<div class="slide-feedback__author">
+										<div class="slide-feedback__name">John Smith</div>
+										<div class="slide-feedback__position">Journalist, HWO News</div>
+									</div>
+								</div>
+							</article>
+							<article class="feedback__slide swiper-slide slide-feedback">
+								<div class="slide-feedback__avatar">
+									<img src="img/feedback/Tamara Bellis.jpg" alt="Tamara Bellis">
+								</div>
+								<div class="slide-feedback__body">
+									<p class="slide-feedback__text">But I must explain to you how all this mistaken idea of
+										denouncing pleasure and praising pain was born and I will give you a complete account of
+										the system and expound the actual teachings of the great explorer of the truth, the
+										master- builder of human happiness.</p>
+									<div class="slide-feedback__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value"></div>
+									</div>
+									<div class="slide-feedback__author">
+										<div class="slide-feedback__name">Tamara Bellis</div>
+										<div class="slide-feedback__position">Managing Director, JTH</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="feedback__navigation">
+						<button class="feedback__button feedback__button_left _icon-select-arrow-down"></button>
+						<button class="feedback__button feedback__button_right _icon-select-arrow-down"></button>
+					</div>
+					<footer class="feedback__footer footer">
+						<div class="footer__subscribe subscribe-footer">
+							<h4 class="subscribe-footer__title">Our Newsletter</h4>
+							<form action="" class="subscribe-footer__form form-footer">
+								<div class="form-footer__column">
+									<label for="feedback-email" class="form-footer__label">Email</label>
+									<input id="feedback-email" autocomplete="off" type="email" name="form[feedback-email]" data-error="Ошибка" placeholder="Enter your email" class="form-footer__input">
+								</div>
+								<div class="form-footer__column">
+									<button type="submit" class="form-footer__button button button_big">Subscribe</button>
+								</div>
+							</form>
+						</div>
+						<div class="footer__content content-footer">
+							<div class="content-footer__info">
+								<a href="" class="content-footer__logo">
+									<img src="img/Logo.svg" alt="Logo">
+								</a>
+								<div class="content-footer__copy">Copyright © Travellian 2020 All rights reserved</div>
+							</div>
+							<div class="content-footer__menu">
+								<h5 class="content-footer__title title-footer">Menu</h5>
+								<ul class="content-footer__list">
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Home</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Explore</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Travel</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Blog</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Pricing</a>
+									</li>
+								</ul>
+							</div>
+							<div class="content-footer__information">
+								<h5 class="content-footer__title title-footer">Information</h5>
+								<ul class="content-footer__list">
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Destinations</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Supports</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Terms & Conditions</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">Privacy</a>
+									</li>
+								</ul>
+							</div>
+							<div class="content-footer__contact">
+								<h5 class="content-footer__title title-footer">Contact Info</h5>
+								<ul class="content-footer__list">
+									<li class="content-footer__item">
+										<a href="tel:123456789" class="content-footer__link link-footer">+123 456 789</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="mailto:info@travellian.com" class="content-footer__link link-footer">info@travellian.com</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="" class="content-footer__link link-footer">1245, New Yourk, USA</a>
+									</li>
+								</ul>
+							</div>
+							<div class="content-footer__follow-us">
+								<h5 class="content-footer__title title-footer">Contact Info</h5>
+								<div class="content-footer__socials">
+									<a href="" class="content-footer__icon _icon-facebook"></a>
+									<a href="" class="content-footer__icon _icon-pinterest"></a>
+									<a href="" class="content-footer__icon _icon-instagram"></a>
+									<a href="" class="content-footer__icon _icon-twitter"></a>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20221127135742"></script>
+</body>
+
+</html>

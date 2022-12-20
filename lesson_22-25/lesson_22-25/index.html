@@ -12,10 +12,146 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			hello world)
+			<div class="header__container">
+				<p>Lesson 22-25 (JS Practice)</p>
+			</div>
 		</header>
 		<main class="page">
-			
+			<div class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__lessons">
+						<div class="main-block__lesson lesson-block lesson-block_2">
+							<h2 class="lesson-block__title">Основы синтаксиса JAVASCRIPT. Структура кода. Инструкции. Режим use
+								strict.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<p>
+										1) Создай новый проект, подключи к нему файл script.js и
+										в строгом режиме выведи в консоль фразу «Я учу JS»
+									</p>
+									<div class="lesson-block__image">
+										<img src="img/les_22/hometask-syntax.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Фраза «Я учу JS» в консоле на 3 строке</p>
+									<p>По картинке:</p>
+									<p>Вариант 1 - не вызовет ошибок</p>
+									<p>Вариант 2 - не вызовет ошибок, но лучше разделить ;</p>
+									<p>Вариант 3 - вызовет ошибку, так как инструкции не разделены ; , можно записать в 2 строки
+										или разделить ;</p>
+									<p>Вариант 4 - вызовет ошибку, так как строка дожны быть обернута в ковычки ""
+										(console.log("Учим"))</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_3">
+							<h2 class="lesson-block__title">Переменные в JAVASCRIPT. Константы. Ключевые слова LET CONST VAR.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<p>
+										1) Придумай имя переменной для хранения цвета
+										глаз пользователя сайта
+									</p>
+									<p>
+										2) Объяви две переменных - user и userName.
+										Присвой значение "Вася" переменной userName.Скопируй значение переменной userName в
+										переменную user.
+										Выведи в консоль переменную user. Результат должен быть Вася.
+									</p>
+								</div>
+								<div class="lesson-block__image">
+									<img src="img/les_22/hometask-variebles.png" alt="Image">
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) На 6 строке в консоле значение переменной (USER_EYES_COLOR), содержащей цвет глаз
+										пользователя сайта</p>
+									<p>2) Все манипуляции с Васей на 8-11 строках</p>
+									<p>По картинке:</p>
+									<p>Вариант 1 - не верно, объявлять и присваивать значения разным переменным нужно через ;,
+										если хотим в одну строку нужно
+										использовать 1 раз слово let в начале строки, а переменные с присвоенными значениями
+										разделять запятой между собой</p>
+									<p>Вариант 2 - ошибок не вызовет, но лучше использовать имя (myAge)</p>
+									<p>Вариант 3 - все верно</p>
+									<p>Вариант 4 - все верно</p>
+									<p>Вариант 5 - ошибку не вызовет, так как переменные объявленные с помощью слова var видны за
+										пределами блока, если это не функция</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_4">
+							<h2 class="lesson-block__title">Типы данных JAVASCRIPT. Null String Undefined Boolean Number и
+								другие.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_22/hometask-datatypes.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>По картинке:</p>
+									<p>Вариант 1 - не верно присвоено значение для переменной userInfo, данную строку нужно записывать внутри обратных кавычек 
+										(let userInfo = `Фрилансер ${userAge}`)</p>
+									<p>Вариант 2 - не верно, вернет значение Infinity (деление на ноль)</p>
+									<p>Вариант 3 - не верно, вернет значение undefined</p>
+									<p>Вариант 4 - верно, произойдет автоматическое приведение типов в число, при делении строки на строку</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_5">
+							<h2 class="lesson-block__title">Операторы JAVASCRIPT. "2"+2=22.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-operators.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>По картинке:</p>
+									<p>Вариант 1 - вернется строка 35 + 22, так как оператор + не преобразовывает типы данных в число, а складывает текущие типы данных</p>
+									<p>Вариант 2 - верно, строки будут преобразованы в числа и умножены друг на друга</p>
+									<p>Вариант 3 - не верно, вернет ошибку, так как инкремент можно использовать только с переменными</p>
+									<p>Вариант 4 - не верно, в консоль выведет 0, так как постфиксная форма инкремента увеличит значени переменной после присвоения</p>
+									<p>Вариант 5 - не верно, в консоль выведет 11, сначала сработает оператор ! (вернет противоположное булевое значение), потом && (вернет первое значение false или  послднее true), потом || (первый true или последний false). Алгоритм вычесления: !false && 11 || 18 && !'' => true && 11 || 18 && 'не пустая строка' => 11 || 'не пустая строка' => 11</p>
+									<p>Вариант 6 - в консоль выведет значение переменной name, так как оно не равно null или undefined</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_6">
+							<h2 class="lesson-block__title">IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-if.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>По картинке:</p>
+									<p>Вариант 1 - вернет строку ложь, так как при строгом равенстве (===) не произойдет преобразование типов данных к числу и поэтому число 1 не равно строке 1</p>
+									<p>Вариант 2 - вернет строку истина, так как при не строгом равенстве (==) типы данных будут преобразованы к числу и число 5 будет равно числу 5 (после преобразования)</p>
+									<p>Вариант 3 - результатом выражения с тернарным оператором ? будет строка Истина и она будет присвоена переменной message (так как результат с тернарным оператором можно присвоить переменной)</p>
+									<p>Вариант 4 - результатом инструкции будет вывод в консоль строки Истина, так как 0 преобразуется в false и основной блок if не будет выполнен, выполнение перейдет к инструкции else if, а не пустая строка вернет true и данный блок бдет выполнен</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 		</main>
 		<footer class="footer">
 		</footer>

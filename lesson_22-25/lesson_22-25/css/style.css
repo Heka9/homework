@@ -1,10 +1,10 @@
 @import "reset.css";
 
-
-body{
+body {
+	font-family: "Arial";
 }
 
-.wrapper{
+.wrapper {
 	overflow: hidden;
 	min-height: 100%;
 	position: relative;
@@ -12,15 +12,80 @@ body{
 	display: flex;
 	flex-direction: column;
 }
-.wrapper > main{
+.wrapper > main {
 	flex-grow: 1;
 }
 
-[class*="__container"]{
+[class*="__container"] {
 	max-width: 1260px;
 	margin: 0 auto;
 	padding: 0px 15px;
 }
 /*----------------------------------------------------------*/
 
-
+.page {
+}
+.page__main-block {
+}
+.main-block {
+}
+.main-block__container {
+}
+.main-block__lessons {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	gap: 50px;
+}
+.main-block__lesson {
+}
+.lesson-block {
+}
+.lesson-block_2 {
+}
+.lesson-block__title {
+	font-size: 32px;
+}
+.lesson-block__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+.lesson-block__body {
+}
+.lesson-block__label{
+	font-size: 24px;
+}
+.lesson-block__label:not(:last-child){
+	margin-bottom: 20px;
+}
+.lesson-block__hometask {
+}
+.lesson-block__hometask p:not(:last-child) {
+	margin-bottom: 10px;
+}
+.lesson-block__hometask:not(:last-child) {
+	margin-bottom: 20px;
+}
+.text {
+	font-size: 18px;
+	line-height: 24px;
+}
+.lesson-block__image {
+	text-align: center;
+}
+.lesson-block__image:not(:last-child) {
+	margin-bottom: 20px;
+}
+.lesson-block__answer {
+}
+.lesson-block__answer p:not(:last-child) {
+	margin-bottom: 10px;
+}
+.lesson-block_3 {
+}
+.footer,
+.header {
+	font-size: 40px;
+	font-weight: 700;
+	padding: 30px 0px;
+	text-align: center;
+}

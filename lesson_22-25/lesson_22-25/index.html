@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Lesson 22-25 (JS Practice)</title>
+	<title>Lesson 22-23 (JS Practice)</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<p>Lesson 22-25 (JS Practice)</p>
+				<p>Lesson 22-23 (JS Practice)</p>
 			</div>
 		</header>
 		<main class="page">
@@ -157,7 +157,7 @@
 								<div class="lesson-block__label">Задание</div>
 								<div class="lesson-block__hometask text">
 									<div class="lesson-block__image">
-										<img src="img/les_23/hotetask-forwhile.png" alt="Image">
+										<img src="img/les_23/hometask-forwhile.png" alt="Image">
 									</div>
 								</div>
 								<div class="lesson-block__label">Ответ</div>
@@ -166,6 +166,47 @@
 									<p>2) Не верно, цикл while будет выполнять действие пока условие будет возвращать true, а на последней итерации, после num-- переменная будет содержать 0, что возвращает false и цикл свою работу прекратит</p>
 									<p>3) Цикл for переписан на while на строках 40-44</p>
 									<p>4) Прекращение работы родительскго цикла по метке строки 46-53</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_8">
+							<h2 class="lesson-block__title">Числа в JAVASCRIPT. Тип данных number. Работа с числами. Проблема неточных вычислений.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-numbers.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Для этого к дробному числу, которое плагируем округлить нужно добавить Number.EPSILON? а потом уже умножить и разделить на 100, в консоли строка 56</p>
+									<p>2) С помощью функции parseFloat(), аргумент нужно передать переменную, строка 59</p>
+									<p>3) Нужно применить проверку на NaN, с помощью функции isNaN(), в аргумент функции передать возможное значение NaN, конструкция построена на строках 61-64</p>
+									<p>4) Максимальное число из перечня находим с помощью функции Math.max(), аргументом передает выборку чисел, ответ на строке 58 в консоле</p>
+									<p>5) Округления дробного числа к целому в меньшую сторону делаем с помощью функции Math.floor(), аргументом передает переменную или число, ответ на строке 68 в консоле</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_9">
+							<h2 class="lesson-block__title">Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-strings.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Запись не верна, если хотим создать строку с помощью строк и других переменных, тогда необходимо использовать обратные кавычки (let text = `Привет! Я ${fls}`;)</p>
+									<p>2) Для получения конкретного символа из строки, я сначала нашел индекс данного символа в строке с помощью str.indexOf(), а потом вывел значение символа в строке с данным индексом, для более надежного поиска можно привести исходную строку и искомый символ к единому регистру, строка 72 в консоле</p>
+									<p>3) Не верно, так как оператор сложения (+) не приводит типы данных к числу, а добавляет(дописывает) значения друг к другу, а если тип данных одного из слогаемых значений является строка, тогда в итоге выйдет строка. Для почуления числа, необходимо каждый операнд привести к числу с помощью функции Number() и в аргумент функции передать операнды или к каждом операнду применить оператор + перед значением (let text = +123 + +"456")</p>
+									<p>4) Для получния строки в верхнем регистре необходимо использовать метод toUpperCase() применяя ее к переменной, содержащей строку (string.toUpperCase()), ответ на строке 75 в консоле</p>
+									<p>5) Для получения части подстроки из строки можно использовать метод slice(), который применяется к переменной, содержащей исходную строку, а в агрумент передаем индекс начала совпадения подстроки и окончания подстроки (индекс окончания получаю с помощью сложения индекса начала и длины подстроки) строки 77-81</p>
+									<p>5) Получим false так как с помощью метода includes() осуществляется поиск подстроки в строке, а вторым агрументом передан индекс с которого начинаем искать, в данной ситуации совпадений не будет (индекс начала совпадения 3, а начинаем искать с 4 индекса)</p>
 								</div>
 							</div>
 						</div>

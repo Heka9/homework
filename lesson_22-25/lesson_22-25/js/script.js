@@ -27,7 +27,7 @@ do {
 } while (number <= 5)
 
 let int;
-for (int = 0; int <= 7; int++) {
+for (int = 0; int <= 10; int++) {
 	if (int === 0) {
 		continue
 	} else if (int > 5) {
@@ -43,11 +43,39 @@ while (integer < 3) {
 	integer++
 }
 
-mainFor:for (let someNum = 0; someNum < 2; someNum++) {
+mainFor: for (let someNum = 0; someNum < 2; someNum++) {
 	for (let size = 0; size < 3; size++) {
-		if(size === 1){
+		if (size === 1) {
 			break mainFor
 		}
 		console.log(size);
 	}
 }
+
+let numOne = Math.round((1.005 + Number.EPSILON) * 100) / 100;
+console.log(numOne);
+
+let value = "135.58px";
+console.log(parseFloat(value))
+
+let newValue = 58 + "Фрилансер";
+if (isNaN(newValue)) {
+	console.log('Результат выражения NaN');
+}
+
+console.log(Math.max(10, 58, 39, -150, 0));
+
+console.log(Math.floor(58.858));
+
+let text = 'фрилансер';
+let letterIndex = text.indexOf("н");
+console.log(text[letterIndex]);
+
+let newText = 'фрилансер';
+console.log(newText.toUpperCase());
+
+const someString = 'фрилансер';
+const subStringValue = 'лан';
+let subString = someString.indexOf('лан');
+
+console.log(someString.slice(someString.indexOf('лан'),  someString.indexOf('лан') + subStringValue.length));

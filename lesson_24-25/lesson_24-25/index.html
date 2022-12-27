@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 24-25 (JS Practice)</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<p>Lesson 24-25 (JS Practice)</p>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__lessons">
+						<div class="main-block__lesson lesson-block lesson-block_1">
+							<h2 class="lesson-block__title">Функции в JAVASCRIPT. Стрелочные функции, рекурсия, планирование:
+								setTimeout и setInterval.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__image">
+									<img src="img/les_24/hometask-functions.png" alt="Image">
+								</div>
+
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Первым в консоль будет выведена строка Коля, а после нее Вася, это связано с очередность выполнения кода на странице, так как функция showName размешена внутри функции setTimeout, то очередность выполнения будет после выполнения основного скрипта даже не смотря на задержку в 0 секуннд для функции setTimeout</p>
+									<p>2) Да верно, именная функция объявлена с помощью ключевого слова function (Function Declaration) может быть вызвана до ее объвления в коде, то есть браузер первым делом обрабатывает код связанный с созданием функций с помощью (Function Declaration) и на момент когда доходит до вызова функции (даже если по коду объявление записано позже) уже понимает о вызове какой функции идет речь</p>
+									<p>3) В этой ситуации браузер выведет ошибку, как так функция обяъвлена с помощью функционального выражения (Function Expression) и присвоена переменной, а браузер выполняя код еще не будет понимать что именно содержит переменная и не сможет вызвать функцию</p>
+									<p>4) В данной ситуации переменная, содержащая функцию (showMessage), не будет видна за пределами блока if (область видимости функии будет внутри блока if). Для избежания данной ситуации, необходимо объявить переменную в глобальной области видимости, а уже внутри блока if присвоить значение переменной с помощью функционального выражения, строки 3-10 в файле script.js</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_2">
+							<h2 class="lesson-block__title">Массивы в JAVASCRIPT. Методы массивов. Редактирование, поиск, сортировка.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__image">
+									<img src="img/les_24/hometask-array.png" alt="Image">
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Получим длинну массива = 4, это связано с тем, что массив это объект, а значит ссылочный тип данных и при копировании переменной, содержащей массив в другую переменную, мы получим ссылку на тот же объект с такой же длинной</p>
+									<p>2) Добавляю элемент в конец массива с помощью метода push(), для замены значения нахожу индекс элемента с помощью метода indexOf и передаю его как агрумент в метод splice(), вторым аргументом указываю количество элементов для замены, 3 - на какие значения заменить. Для удаления первого элемента массива использую метод shift() и полученный элемент присваиваю переменной. Для добавления элементов в начало массива можно использовать методы splice() или unshift(), все решение на строках 12-25 в файле script.js</p>
+									<p>3) Сначала нахожу индекс необходимого элемента массива, а потом полученное значение передаю в метод splice() примененный к этому массиву, вторым агрументом передаю 1 (количество элементов для удаления) и полученный результат присваиваю пременной, строки 28-32</p>
+									<p>4) Для создания массива из строки использую метод split() и в качетве агрумента (разделителя) можно передать строку с запятой, тогда полученый массив будет состоять из 3 слов или пустую строку, тогда каждый элемент строки станет отдельным элементом массива</p>
+									<p>5) Так как в метод reduce() значение previousValue не было передано, то по умолчанию оно будет равно значению первого элемента в массиве, а это 9</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_4">
+							<h2 class="lesson-block__title">Типы данных JAVASCRIPT. Null String Undefined Boolean Number и
+								другие.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_22/hometask-datatypes.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>По картинке:</p>
+									<p>Вариант 1 - не верно присвоено значение для переменной userInfo, данную строку нужно
+										записывать внутри обратных кавычек
+										(let userInfo = `Фрилансер ${userAge}`)</p>
+									<p>Вариант 2 - не верно, вернет значение Infinity (деление на ноль)</p>
+									<p>Вариант 3 - не верно, вернет значение undefined</p>
+									<p>Вариант 4 - верно, произойдет автоматическое приведение типов в число, при делении строки
+										на строку</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_5">
+							<h2 class="lesson-block__title">Операторы JAVASCRIPT. "2"+2=22.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-operators.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>По картинке:</p>
+									<p>Вариант 1 - вернется строка 35 + 22, так как оператор + не преобразовывает типы данных в
+										число, а складывает текущие типы данных</p>
+									<p>Вариант 2 - верно, строки будут преобразованы в числа и умножены друг на друга</p>
+									<p>Вариант 3 - не верно, вернет ошибку, так как инкремент можно использовать только с
+										переменными</p>
+									<p>Вариант 4 - не верно, в консоль выведет 0, так как постфиксная форма инкремента увеличит
+										значени переменной после присвоения</p>
+									<p>Вариант 5 - не верно, в консоль выведет 11, сначала сработает оператор ! (вернет
+										противоположное булевое значение), потом && (вернет первое значение false или послднее
+										true), потом || (первый true или последний false). Алгоритм вычесления: !false && 11 || 18
+										&& !'' => true && 11 || 18 && 'не пустая строка' => 11 || 'не пустая строка' => 11</p>
+									<p>Вариант 6 - в консоль выведет значение переменной name, так как оно не равно null или
+										undefined</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_6">
+							<h2 class="lesson-block__title">IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-if.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>По картинке:</p>
+									<p>Вариант 1 - вернет строку ложь, так как при строгом равенстве (===) не произойдет
+										преобразование типов данных к числу и поэтому число 1 не равно строке 1</p>
+									<p>Вариант 2 - вернет строку истина, так как при не строгом равенстве (==) типы данных будут
+										преобразованы к числу и число 5 будет равно числу 5 (после преобразования)</p>
+									<p>Вариант 3 - результатом выражения с тернарным оператором ? будет строка Истина и она будет
+										присвоена переменной message (так как результат с тернарным оператором можно присвоить
+										переменной)</p>
+									<p>Вариант 4 - результатом инструкции будет вывод в консоль строки Истина, так как 0
+										преобразуется в false и основной блок if не будет выполнен, выполнение перейдет к
+										инструкции else if, а не пустая строка вернет true и данный блок бдет выполнен</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_7">
+							<h2 class="lesson-block__title">Циклы FOR и WHILE в JavaScript. Директивы break и continue.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-forwhile.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Разные варианты вывода от 1 до 5 строки 13-38</p>
+									<p>2) Не верно, цикл while будет выполнять действие пока условие будет возвращать true, а на
+										последней итерации, после num-- переменная будет содержать 0, что возвращает false и цикл
+										свою работу прекратит</p>
+									<p>3) Цикл for переписан на while на строках 40-44</p>
+									<p>4) Прекращение работы родительскго цикла по метке строки 46-53</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_8">
+							<h2 class="lesson-block__title">Числа в JAVASCRIPT. Тип данных number. Работа с числами. Проблема
+								неточных вычислений.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+								</div>
+								<div class="lesson-block__image">
+									<img src="img/les_23/hometask-numbers.png" alt="Image">
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Для этого к дробному числу, которое плагируем округлить нужно добавить Number.EPSILON?
+										а потом уже умножить и разделить на 100, в консоли строка 56</p>
+									<p>2) С помощью функции parseFloat(), аргумент нужно передать переменную, строка 59</p>
+									<p>3) Нужно применить проверку на NaN, с помощью функции isNaN(), в аргумент функции передать
+										возможное значение NaN, конструкция построена на строках 61-64</p>
+									<p>4) Максимальное число из перечня находим с помощью функции Math.max(), аргументом передает
+										выборку чисел, ответ на строке 58 в консоле</p>
+									<p>5) Округления дробного числа к целому в меньшую сторону делаем с помощью функции
+										Math.floor(), аргументом передает переменную или число, ответ на строке 68 в консоле</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__lesson lesson-block lesson-block_9">
+							<h2 class="lesson-block__title">Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск,
+								регистр и получение подстроки.
+							</h2>
+							<div class="lesson-block__body">
+								<div class="lesson-block__label">Задание</div>
+								<div class="lesson-block__hometask text">
+									<div class="lesson-block__image">
+										<img src="img/les_23/hometask-strings.png" alt="Image">
+									</div>
+								</div>
+								<div class="lesson-block__label">Ответ</div>
+								<div class="lesson-block__answer text">
+									<p>1) Запись не верна, если хотим создать строку с помощью строк и других переменных, тогда
+										необходимо использовать обратные кавычки (let text = `Привет! Я ${fls}`;)</p>
+									<p>2) Для получения конкретного символа из строки, я сначала нашел индекс данного символа в
+										строке с помощью str.indexOf(), а потом вывел значение символа в строке с данным индексом,
+										для более надежного поиска можно привести исходную строку и искомый символ к единому
+										регистру, строка 72 в консоле</p>
+									<p>3) Не верно, так как оператор сложения (+) не приводит типы данных к числу, а
+										добавляет(дописывает) значения друг к другу, а если тип данных одного из слогаемых
+										значений является строка, тогда в итоге выйдет строка. Для почуления числа, необходимо
+										каждый операнд привести к числу с помощью функции Number() и в аргумент функции передать
+										операнды или к каждом операнду применить оператор + перед значением (let text = +123 +
+										+"456")</p>
+									<p>4) Для получния строки в верхнем регистре необходимо использовать метод toUpperCase()
+										применяя ее к переменной, содержащей строку (string.toUpperCase()), ответ на строке 75 в
+										консоле</p>
+									<p>5) Для получения части подстроки из строки можно использовать метод slice(), который
+										применяется к переменной, содержащей исходную строку, а в агрумент передаем индекс начала
+										совпадения подстроки и окончания подстроки (индекс окончания получаю с помощью сложения
+										индекса начала и длины подстроки) строки 77-81</p>
+									<p>5) Получим false так как с помощью метода includes() осуществляется поиск подстроки в
+										строке, а вторым агрументом передан индекс с которого начинаем искать, в данной ситуации
+										совпадений не будет (индекс начала совпадения 3, а начинаем искать с 4 индекса)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</main>
+		<footer class="footer">
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

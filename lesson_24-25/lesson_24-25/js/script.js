@@ -86,7 +86,7 @@ function showScrollFromTop() {
 	console.log(window.scrollY);
 }
 
-// setTimeout(scrollPageDown, 1000, 100)
+setTimeout(scrollPageDown, 1000, 100)
 setTimeout(showScrollFromTop, 2000)
 
 const lessonValue = document.querySelector(".lesson__value span");

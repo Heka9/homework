@@ -51,10 +51,10 @@ body {
 }
 .lesson-block__body {
 }
-.lesson-block__label{
+.lesson-block__label {
 	font-size: 24px;
 }
-.lesson-block__label:not(:last-child){
+.lesson-block__label:not(:last-child) {
 	margin-bottom: 20px;
 }
 .lesson-block__hometask {
@@ -77,6 +77,10 @@ body {
 }
 .lesson-block__answer {
 }
+.lesson-block__answer span{
+	text-decoration: line-through;
+	border-bottom: 1px dashed #000;
+}
 .lesson-block__answer p:not(:last-child) {
 	margin-bottom: 10px;
 }
@@ -87,5 +91,110 @@ body {
 	font-size: 40px;
 	font-weight: 700;
 	padding: 30px 0px;
-	text-align: center;
+}
+.info{
+	font-size: 18px;
+}
+.footer__button  {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	margin-bottom: 30px;
+	transition: all 0.3s ease 0s;
+	gap: 20px;
+}
+.footer__button svg {
+	transition: all 0.3s ease 0s;
+}
+.footer__button:hover {
+	color: rgb(10, 43, 104);
+}
+.footer__button:hover svg {
+	fill: rgb(10, 43, 104);
+}
+.footer__block{
+	
+}
+.footer__form {
+	max-width: 500px;
+	padding: 50px 20px;
+	margin-bottom: 30px;
+	background-color: wheat;
+	text-align: left;
+	display: none;
+}
+.footer__block._active .footer__form{
+	display: block;
+}
+.menu-open{
+	display: block;
+}
+.menu-close{
+	display: none;
+}
+.footer__block._active .menu-open{
+	display: none;
+}
+.footer__block._active .menu-close{
+	display: block;
+}
+.form {
+}
+
+.form__line {
+}
+.form__line:not(:last-child){
+	margin-bottom: 20px;
+}
+.form__error{
+	font-size: 14px;
+	margin-top: 5px;
+	color: red;
+}
+.form__label {
+	font-size: 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.form__input {
+
+}
+.input {
+	width: 100%;
+	font-size: 20px;
+	line-height: 1;
+	height: 40px;
+	padding: 0px 20px;
+}
+.textarea{
+	resize: vertical;
+	padding: 10px 20px;
+	min-height: 150px;
+}
+.form__radio{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.form__radio .form__label{
+	margin: 0;
+}
+.form__radio:not(:last-child){
+	margin-bottom: 10px;
+}
+.radio{
+	height: 30px;
+	width: 30px;
+}
+.input::placeholder{
+	font-size: 16px;
+}
+.form__counter {
+	margin-top: 5px;
+	font-size: 16px;
+}
+.form__button{
+	font-size: 20px;
+	padding: 5px 15px;
+	background-color: darkred;
 }
